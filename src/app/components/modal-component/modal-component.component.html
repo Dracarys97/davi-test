@@ -1,0 +1,23 @@
+<div [ngClass]="modalClass">
+  <div class="modal-component" (click)="onClose()"></div>
+  <div class="modal-container">
+    <div class="modal-container__rectangle"></div>
+    <div *ngIf="greeting">
+      <app-greeting> </app-greeting>
+    </div>
+    <div *ngIf="transfer">
+      <app-transfer></app-transfer>
+    </div>
+    <div *ngIf="infoTransfer">
+      <app-info-transfer></app-info-transfer>
+    </div>
+    <div *ngIf="successTransfer">
+      <app-success-transfer [finalized]="voucherDisplay"></app-success-transfer>
+    </div>
+    <img
+      [ngClass]="imgClass"
+      src="{{ '../../../assets/imgs/' + image }}"
+      (click)="changeModalElements()"
+    />
+  </div>
+</div>

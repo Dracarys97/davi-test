@@ -1,0 +1,60 @@
+.info-transfer {
+  padding: 0 24px;
+  &__description {
+    font-size: 14px;
+    color: #404040;
+  }
+  &__suggestion {
+    color: #404040;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+  &__account {
+    display: flex;
+    justify-content: space-between;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      &__bold-info {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      &__secondary {
+        color: #676464;
+        font-size: 12px;
+      }
+      &__secondary-right {
+        color: #676464;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+    &__arrow {
+      width: 8px;
+      height: 14px;
+      display: flex;
+      align-self: center;
+      margin-right: 8px;
+    }
+  }
+  &__line {
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  &__voice {
+    color: #676565;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  &__voice-bold {
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}

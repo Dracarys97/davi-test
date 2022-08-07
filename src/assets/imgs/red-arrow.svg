@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.023" height="12.64" viewBox="0 0 15.023 12.64">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_9528" data-name="Trazado 9528" d="M181.941-157.646l5.217-5.318a1,1,0,0,0,0-1.4l-5.226-5.378a.905.905,0,0,0-1.278-.021.9.9,0,0,0-.025,1.278l3.78,3.938H173.322a.9.9,0,0,0-.9.9.9.9,0,0,0,.9.9h11.091l-3.77,3.836a.9.9,0,0,0,.011,1.272l0,0A.91.91,0,0,0,181.941-157.646Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_9527" data-name="Trazado 9527" d="M0,96H360V-544H0Z" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectángulo_308" data-name="Rectángulo 308" width="18" height="16" transform="translate(171 -172)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Trazado_9526" data-name="Trazado 9526" d="M172-157h16v-14H172Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_16427" data-name="Grupo 16427" transform="translate(-172.421 170.013)" clip-path="url(#clip-path)">
+    <g id="Grupo_16426" data-name="Grupo 16426" clip-path="url(#clip-path-2)">
+      <g id="Grupo_16425" data-name="Grupo 16425" style="mix-blend-mode: normal;isolation: isolate">
+        <g id="Grupo_16424" data-name="Grupo 16424" clip-path="url(#clip-path-3)">
+          <g id="Grupo_16423" data-name="Grupo 16423" clip-path="url(#clip-path-4)">
+            <path id="Trazado_9524" data-name="Trazado 9524" d="M171-156v-16h18v16Z" fill="#d7d7d7"/>
+            <path id="Trazado_9525" data-name="Trazado 9525" d="M171-156v-16h18v16Z" fill="#e0111b"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

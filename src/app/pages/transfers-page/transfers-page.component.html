@@ -1,0 +1,97 @@
+<div class="transfers-page">
+  <div class="transfers-page__header">
+    <img
+      src="../../../assets/imgs/back-arrow.png"
+      class="transfers-page__header__back-arrow"
+    />
+    <img
+      src="../../../assets/imgs/davivienda-logo.svg"
+      class="transfers-page__header__davivienda-icon"
+    />
+    <img
+      src="../../../assets/imgs/close-icon.png"
+      class="transfers-page__header__close-icon"
+    />
+  </div>
+  <div class="transfers-page__dropdown">
+    <div class="transfers-page__dropdown__name">
+      CRISTIAN DAVID ARIAS CORREA
+    </div>
+    <div class="transfers-page__dropdown__button-container">
+      <img
+        src="../../../assets/imgs/dropdown-icon.svg"
+        class="transfers-page__dropdown__button-container__icon"
+      />
+      <div class="transfers-page__dropdown__button-container__label">
+        Transferencias y avances
+      </div>
+    </div>
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">
+      Entre mis productos Davivienda
+    </div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">A otras cuentas Davivienda</div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">A DaviPlata</div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">A cuentas otros bancos</div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">
+      Desde y hacía mis bolsillos
+    </div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">Giros internacionales</div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element">
+    <div class="transfers-page__element__label">Avances</div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <div class="transfers-page__element" (click)="changeVisibility()">
+    <div class="transfers-page__element__label">
+      Transferencia a DaviPlata por comando de voz
+    </div>
+    <img
+      src="../../../assets/imgs/arrow-icon.svg"
+      class="transfers-page__element__icon"
+    />
+  </div>
+  <app-modal-component
+    [visibility]="visibility"
+    [changeVisibility]="changeVisibility"
+  >
+  </app-modal-component>
+</div>

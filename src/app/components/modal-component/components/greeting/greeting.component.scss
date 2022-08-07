@@ -1,0 +1,15 @@
+.greetings {
+  padding: 0 24px;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #404040;
+  }
+  &__description {
+    font-size: 14px;
+    text-align: left;
+    color: #404040;
+  }
+}
