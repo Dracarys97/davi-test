@@ -12,5 +12,6 @@ export class TransfersPageComponent implements OnInit {
   ngOnInit(): void {}
   changeVisibility = () => {
     this.visibility = !this.visibility;
+    console.log(this.visibility);
   };
 }

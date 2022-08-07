@@ -34,30 +34,40 @@ export class ModalComponentComponent implements OnInit {
     this.changeVisibility();
   };
   handleId = () => {
-    if (this.id === 0) {
-      this.transfer = false;
-      this.infoTransfer = false;
-      this.successTransfer = false;
-      this.voucherDisplay = false;
-      this.greeting = true;
-    }
-    if (this.id === 1) {
-      this.greeting = false;
-      this.transfer = true;
-    }
-    if (this.id === 2) {
-      this.transfer = false;
-      this.infoTransfer = true;
-    }
-    if (this.id === 3) {
-      this.infoTransfer = false;
-      this.successTransfer = true;
-    }
-    if (this.id === 4) {
-      this.voucherDisplay = true;
-    }
-    if (this.id === 5) {
-      this.visibility = false;
+    switch (this.id) {
+      case 0:
+        this.transfer = false;
+        this.infoTransfer = false;
+        this.successTransfer = false;
+        this.voucherDisplay = false;
+        this.greeting = true;
+        break;
+      case 1:
+        this.greeting = false;
+        this.transfer = true;
+        break;
+      case 2:
+        this.transfer = false;
+        this.infoTransfer = true;
+        break;
+      case 3:
+        this.infoTransfer = false;
+        this.successTransfer = true;
+        break;
+
+      case 4:
+        this.voucherDisplay = true;
+        break;
+      case 5:
+        this.changeVisibility();
+        this.voucherDisplay = false;
+        this.successTransfer = false;
+        this.greeting = true;
+        this.id = 0;
+        break;
+      default:
+        this.changeVisibility();
+        break;
     }
   };
   get modalClass() {
