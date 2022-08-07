@@ -10,6 +10,7 @@ export class ModalComponentComponent implements OnInit {
   @Input() changeVisibility: any;
   private id: number = 0;
   public image: string = 'mic-icon.svg';
+  public imageClass: string = 'modal-container__mic';
   public greeting: boolean = true;
   public transfer: boolean = false;
   public infoTransfer: boolean = false;
@@ -20,8 +21,19 @@ export class ModalComponentComponent implements OnInit {
   ngOnInit(): void {}
 
   changeModalElements = () => {
-    this.image = this.image === 'waves.png' ? 'mic-icon.svg' : 'waves.png';
     this.id = this.id + 1;
+    this.image = 'waves.png';
+    this.imageClass = 'modal-container__waves';
+    setTimeout(() => {
+      this.handleId();
+      this.imageClass = 'modal-container__mic';
+      this.image = 'mic-icon.svg';
+    }, 2000);
+  };
+  onClose = () => {
+    this.changeVisibility();
+  };
+  handleId = () => {
     if (this.id === 0) {
       this.transfer = false;
       this.infoTransfer = false;
@@ -48,19 +60,10 @@ export class ModalComponentComponent implements OnInit {
       this.visibility = false;
     }
   };
-  onClose = () => {
-    this.changeVisibility();
-  };
   get modalClass() {
     if (!this.visibility) {
       return 'hidden';
     }
     return 'modal';
-  }
-  get imgClass() {
-    if (this.image !== 'mic-icon.svg') {
-      return 'modal-container__waves';
-    }
-    return 'modal-container__mic';
   }
 }
